@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Moje projekty</a></li>
+                <li><a href="#skills">Umiejętności</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <button class="burger-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-alternate">
+        <div class="hero-content">
+            <h1>Cześć, jestem Franek</h1>
+            <p>Tworzę innowacyjne rozwiązania webowe z pasją i precyzją.</p>
+            <button onclick="scrollToSection('projects')">Zobacz moje projekty</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>O mnie</h2>
+        <div class="about-container">
+            <img src="generatywny-obraz-ai-portret-smutnego-pomarszczonego-starszego-bezdomnego-mezczyzny-w-cieplych-ubraniach-z-siwa-broda-patrzacego-w-kamere_501669-26724-4240864729.jpg" alt="Moje zdjęcie" class="profile-pic">
+            <p>Cześć! Jestem deweloperem, który koncentruje się na tworzeniu przyjaznych dla użytkownika stron i aplikacji, które rozwiązują realne problemy. Specjalizuję się w front-endzie i back-endzie, zwracając szczególną uwagę na design.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Moje umiejętności</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML i CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">UI/UX Design</div>
+            <div class="skill">Git i GitHub</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Moje projekty</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Strona e-commerce</h3>
+                <p>Kompleksowa platforma e-commerce z nowoczesnym designem i solidną funkcjonalnością.</p>
+            </div>
+            <div class="project">
+                <h3>Strona portfolio</h3>
+                <p>Osobista strona portfolio prezentująca moje projekty i umiejętności z interaktywnymi funkcjami.</p>
+            </div>
+            <div class="project">
+                <h3>Platforma blogowa</h3>
+                <p>System zarządzania treścią, który pozwala użytkownikom tworzyć i udostępniać posty na blogu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form id="contact-form">
+            <label for="name">Imię</label>
+            <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Twój e-mail" required>
+
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="5" placeholder="Twoja wiadomość" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>&copy; 2024 Portfolio. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
